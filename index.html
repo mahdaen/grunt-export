@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Grunt-export by mahdaen</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Grunt-export</h1>
+          <h2>Import javascript dependencies and export to file. Like concat, but it&#39;s accept inline files.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/mahdaen/grunt-export/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/mahdaen/grunt-export/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/mahdaen/grunt-export" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="grunt-export-v012" class="anchor" href="#grunt-export-v012" aria-hidden="true"><span class="octicon octicon-link"></span></a>grunt-export v0.1.2</h1>
+
+<blockquote>
+<p>Import javascript dependencies and export to file. Like concat, but it's accept inline files.</p>
+</blockquote>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>This plugin requires Grunt <code>~0.4.5</code></p>
+
+<p>If you haven't used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a> as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:</p>
+
+<div class="highlight highlight-shell"><pre>npm install grunt-export --save-dev</pre></div>
+
+<p>Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:</p>
+
+<div class="highlight highlight-js"><pre>grunt.loadNpmTasks(<span class="pl-s1"><span class="pl-pds">'</span>grunt-export<span class="pl-pds">'</span></span>);</pre></div>
+
+<h2>
+<a id="the-export-task" class="anchor" href="#the-export-task" aria-hidden="true"><span class="octicon octicon-link"></span></a>The "export" task</h2>
+
+<h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>In your project's Gruntfile, add a section named <code>export</code> to the data object passed into <code>grunt.initConfig()</code>.</p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  export<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {
+      <span class="pl-c">// Task options</span>
+    },
+    your_target<span class="pl-k">:</span> {
+      <span class="pl-c">// Target dir and files.</span>
+    },
+  },
+});</pre></div>
+
+<h3>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<h4>
+<a id="optionsexec" class="anchor" href="#optionsexec" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.exec</h4>
+
+<p>Type: <code>Boolean</code>
+Default value: <code>false</code></p>
+
+<p>Execute scripts while exporting or not.</p>
+
+<h4>
+<a id="optionssync" class="anchor" href="#optionssync" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.sync</h4>
+
+<p>Type: <code>Boolean</code>
+Default value: <code>false</code></p>
+
+<p>Execute scripts in synchronus mode.</p>
+
+<h4>
+<a id="optionsexport" class="anchor" href="#optionsexport" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.export</h4>
+
+<p>Type: <code>Boolean</code>
+Default value: <code>true</code></p>
+
+<p>Export imported scripts or just execute the scripts.</p>
+
+<h4>
+<a id="optionsuglify" class="anchor" href="#optionsuglify" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.uglify</h4>
+
+<p>Type: <code>Boolean</code>
+Default value: <code>true</code></p>
+
+<p>Export the minified version to file using UglifyJS.</p>
+
+<h4>
+<a id="optionsuglifyoptions" class="anchor" href="#optionsuglifyoptions" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.uglifyOptions</h4>
+
+<p>Type: <code>Object</code>
+Default value: <code>null</code></p>
+
+<p>Uglify options that will be passed to UglifyJS</p>
+
+<h4>
+<a id="optionssourcemap" class="anchor" href="#optionssourcemap" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.sourcemap</h4>
+
+<p>Type: <code>Boolean</code>
+Default value: <code>true</code></p>
+
+<p>Export the sourcemap to file.</p>
+
+<h4>
+<a id="optionsverbose" class="anchor" href="#optionsverbose" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.verbose</h4>
+
+<p>Type: <code>Boolean</code>
+Default value: <code>false</code></p>
+
+<p>Logs all activity.</p>
+
+<h3>
+<a id="usage-examples" class="anchor" href="#usage-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage Examples</h3>
+
+<h4>
+<a id="default-options" class="anchor" href="#default-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default Options</h4>
+
+<p>In this example, task using default options and use verbose to logs all activity.</p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  export<span class="pl-k">:</span> {
+    test<span class="pl-k">:</span> {
+      options<span class="pl-k">:</span> {
+        verbose<span class="pl-k">:</span> <span class="pl-c1">true</span>
+      },
+      files<span class="pl-k">:</span> {
+        <span class="pl-s1"><span class="pl-pds">'</span>tmp<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s1"><span class="pl-pds">'</span>test/people.js<span class="pl-pds">'</span></span>],
+      },
+    }
+  }
+});</pre></div>
+
+<h2>
+<a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release History</h2>
+
+<ul>
+<li>2015-02-21        v0.1.2      "First release, follow the release version of <code>node-import</code>."</li>
+</ul>
+        </section>
+
+        <footer>
+          Grunt-export is maintained by <a href="https://github.com/mahdaen">mahdaen</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
