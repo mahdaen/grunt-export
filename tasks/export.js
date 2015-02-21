@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         /* Getting options */
         var options = this.options({
             exec: false,
-            sync: true,
+            async: false,
 
             export: true,
             uglify: true,
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                 if (grunt.file.exists(file)) {
                     var exp = exports(file, {
                         exec: options.exec,
-                        sync: options.sync,
+                        async: options.async,
 
                         export: options.export,
                         exportDir: fileobj.dest,
