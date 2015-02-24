@@ -1,7 +1,7 @@
 {
   "name": "grunt-export",
   "description": "Import javascript dependencies and export to file. Like concat, but it's accept inline files.",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "homepage": "https://github.com/mahdaen/grunt-export",
   "author": {
     "name": "Nanang Mahdaen El Agung",
