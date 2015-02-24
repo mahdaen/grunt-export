@@ -9,10 +9,10 @@
 'use strict';
 
 /* Using Node Import */
-var exports = require('node-import');
+var imports = require('node-import');
 
 module.exports = function (grunt) {
-    grunt.registerMultiTask('export', 'Import javascript dependencies and export to file. Like concat, but it\'s accept inline files.', function () {
+    grunt.registerMultiTask('exports', 'Import javascript dependencies and export to file. Like concat, but it\'s accept inline files.', function () {
         /* Getting options */
         var options = this.options({
             exec: false,
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
             /* Iterate each file */
             fileobj.src.map(function(file) {
                 if (grunt.file.exists(file)) {
-                    var exp = exports(file, {
+                    var exp = imports(file, {
                         exec: options.exec,
                         async: options.async,
 

@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         },
 
         /* Export test */
-        export: {
+        exports: {
             people: {
                 options: {
                     verbose: true
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     /* Register test task */
-    grunt.registerTask('test', ['clean', 'export']);
+    grunt.registerTask('test', ['clean', 'exports']);
 
     /* Register default task */
     grunt.registerTask('default', ['test']);

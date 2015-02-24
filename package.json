@@ -1,48 +1,48 @@
 {
-    "name": "grunt-export",
-    "description": "Import javascript dependencies and export to file. Like concat, but it's accept inline files.",
-    "version": "0.1.4",
-    "homepage": "https://github.com/mahdaen/grunt-export",
-    "author": {
-        "name": "Nanang Mahdaen El Agung",
-        "email": "nanang@mahdaen.name",
-        "url": "http://mahdaen.name"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/mahdaen/grunt-export"
-    },
-    "bugs": {
-        "url": "https://github.com/mahdaen/grunt-export/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/mahdaen/grunt-export/blob/master/LICENSE-MIT"
-        }
-    ],
-    "engines": {
-        "node": ">= 0.8.0"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "devDependencies": {
-        "grunt-contrib-clean": "^0.5.0",
-        "grunt": "~0.4.5"
-    },
-    "peerDependencies": {
-        "grunt": "~0.4.5"
-    },
-    "keywords": [
-        "export",
-        "grunt-export",
-        "node-import",
-        "uglify",
-        "concat",
-        "ipmort"
-    ],
-    "dependencies": {
-        "node-import": "^0.1.4"
+  "name": "grunt-export",
+  "description": "Import javascript dependencies and export to file. Like concat, but it's accept inline files.",
+  "version": "0.1.6",
+  "homepage": "https://github.com/mahdaen/grunt-export",
+  "author": {
+    "name": "Nanang Mahdaen El Agung",
+    "email": "nanang@mahdaen.name",
+    "url": "http://mahdaen.name"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mahdaen/grunt-export"
+  },
+  "bugs": {
+    "url": "https://github.com/mahdaen/grunt-export/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mahdaen/grunt-export/blob/master/LICENSE-MIT"
     }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "export",
+    "grunt-export",
+    "node-import",
+    "uglify",
+    "concat",
+    "ipmort"
+  ],
+  "dependencies": {
+    "node-import": "^0.1.7"
+  }
 }

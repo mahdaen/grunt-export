@@ -27,11 +27,11 @@ grunt.loadNpmTasks('grunt-export');
 ## The "export" task
 
 ### Overview
-In your project's Gruntfile, add a section named `export` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `exports` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  export: {
+  exports: {
     options: {
       // Task options
     },
@@ -93,7 +93,7 @@ In this example, task using default options and use verbose to logs all activity
 
 ```js
 grunt.initConfig({
-  export: {
+  exports: {
     test: {
       options: {
         verbose: true
@@ -107,6 +107,9 @@ grunt.initConfig({
 ```
 
 ## Release History
+* 2015-02-25        v0.1.7      "Updating NodeImport version."
+* 2015-02-25        v0.1.6      "Fixing namespace and async orders. Renaming export to exports since it's and reserved word."
+* 2015-02-24        v0.1.5      "Updating NodeImport version."
 * 2015-02-24        v0.1.4      "Updating namespace variable getter."
 * 2015-02-21        v0.1.3      "Fixing mistakes with `async` option."
 * 2015-02-21        v0.1.2      "First release, follow the release version of `node-import`."
