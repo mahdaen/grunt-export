@@ -43,6 +43,6 @@
     "ipmort"
   ],
   "dependencies": {
-    "node-import": "^0.1.7"
+    "node-import": "^0.1.8"
   }
 }
