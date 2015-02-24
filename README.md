@@ -107,5 +107,6 @@ grunt.initConfig({
 ```
 
 ## Release History
+* 2015-02-24        v0.1.4      "Updating namespace variable getter."
 * 2015-02-21        v0.1.3      "Fixing mistakes with `async` option."
 * 2015-02-21        v0.1.2      "First release, follow the release version of `node-import`."
