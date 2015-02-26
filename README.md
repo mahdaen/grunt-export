@@ -107,6 +107,7 @@ grunt.initConfig({
 ```
 
 ## Release History
+* 2015-02-26        v0.2.1      "Updating NodeImport."
 * 2015-02-26        v0.2.0      "Updating NodeImport."
 * 2015-02-26        v0.1.9      "Updating NodeImport."
 * 2015-02-25        v0.1.8      "Updating NodeImport version."
