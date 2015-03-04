@@ -107,6 +107,7 @@ grunt.initConfig({
 ```
 
 ## Release History
+* 2015-03-05        v0.3.1      "Fixing namespace conflict when using null-extension."
 * 2015-03-05        v0.3.0      "Adding support to ignore file extension using plain object as namespace."
 * 2015-02-26        v0.2.1      "Updating NodeImport."
 * 2015-02-26        v0.2.0      "Updating NodeImport."
