@@ -107,6 +107,7 @@ grunt.initConfig({
 ```
 
 ## Release History
+* 2015-03-08        v0.6.0      "Adding include() module - NodeImport"
 * 2015-03-05        v0.5.0      "Fixing namespace and add return variables as object for imports.module()"
 * 2015-03-05        v0.4.1      "Fixing source-map sources url mistake."
 * 2015-03-05        v0.4.0      "Adding support to import scripts by call it inside a module."
