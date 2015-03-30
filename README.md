@@ -80,6 +80,24 @@ Default value: `true`
 
 Export the sourcemap to file.
 
+#### options.beautify
+Type: `Boolean`
+Default value: `true`
+
+Beautify the scripts.
+
+#### options.noscript
+Type: `Boolean`
+Default value: `false`
+
+Mark as non-javascript files.
+
+#### options.formatter
+Type: `Function`
+Default value: `null`
+
+Custom formatter to format/beautify the imported files.
+
 #### options.verbose
 Type: `Boolean`
 Default value: `false`
@@ -107,6 +125,7 @@ grunt.initConfig({
 ```
 
 ## Release History
+* 2015-03-30        v0.9.0      "Adding support to concatenate non-javascript files."
 * 2015-03-27        v0.8.0      "Updating NodeImport"
 * 2015-03-08        v0.6.0      "Adding include() module - NodeImport"
 * 2015-03-05        v0.5.0      "Fixing namespace and add return variables as object for imports.module()"
